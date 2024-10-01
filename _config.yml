@@ -1,15 +1,22 @@
 # User config
-author: "Pineapple"
-tagline: "Pineapple Certfied Jekyll Theme"
-description: "In 1493, explorer Christopher Columbus found pineapples on Guadeloupe Island in the Caribbean. Pineapple on pizza soon followed..."
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "pineapple@example.com"
-linkedin: "https://www.linkedin.com/"
-twitter: "https://twitter.com/"
-github: "https://github.com/"
+title: blank # the website title (if blank, full name will be used instead)
+first_name: Ayush
+middle_name: 
+last_name: Gaggar
+email: agaggar@u.northwestern.edu
+description: "Personal website for Ayush Gaggar, a Robotics Ph.D. candidate at Northwestern University."
+author: "Ayush Gaggar"
+tagline: "Personal website - Robotics"
+linkedin: "https://www.linkedin.com/in/ayushgaggar"
+github: "https://github.com/Agaggar"
+scholar_id: "https://scholar.google.com/citations?user=hvGVGsQAAAAJ&hl=en"
+
+keywords: robotics, machine learning # add your own keywords or leave empty
+lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
+icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 # Site config
-baseurl: "/pineapple"
+baseurl: ""
 highlighter: rouge
 sass:
   sass_dir: assets/scss
