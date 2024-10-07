@@ -4,12 +4,13 @@ first_name: Ayush
 middle_name: 
 last_name: Gaggar
 email: agaggar@u.northwestern.edu
-description: "Hey there! This site is still under development, come back soon! \nI'm Ayush Gaggar, a Robotics Ph.D. candidate at Northwestern University. My research interests include explainable machine learning & robot learning."
+description: "Hey there! This site is still under development, come back soon! I'm Ayush Gaggar, a Robotics Ph.D. candidate at Northwestern University. My research interests include explainable machine learning & robot learning."
 author: "Ayush Gaggar"
 tagline: "Personal website - Robotics"
 linkedin: "https://www.linkedin.com/in/ayushgaggar"
 github: "https://github.com/Agaggar"
 scholar_id: "https://scholar.google.com/citations?user=hvGVGsQAAAAJ&hl=en"
+resume: "https://drive.google.com/file/d/1UMreqa70GdaF89xDcwTbfs59emIFfoDe/view?usp=share_link"
 
 keywords: robotics, machine learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)

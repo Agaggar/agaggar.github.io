@@ -7,15 +7,16 @@
 }
 
 .header {
-	background: $color-white;
+	background: $color-green;
 	padding: 3rem 0;
 }
 
 .logo {
 	float: left;
-	font-size: 1.8rem;
+	font-size: 2.0rem;
 	font-weight: 600;
-	margin: 0;
+	// margin: 0;
+	margin-right: 10px;
 	line-height: 1;
 }
 
@@ -37,7 +38,7 @@
 	z-index: 1;
 
 	@media (min-width: $breakpoint-medium) {
-		padding: 21rem 0 0;
+		padding: 10rem 0 0;
 		margin-bottom: 23.42rem;
 	}
 }
@@ -48,6 +49,8 @@
 }
 
 .intro {
+	margin-top: -5rem;
+	margin-bottom: 0rem;
 	@media (min-width: $breakpoint-medium) {
 		p {
 			font-size: 2.7rem;
@@ -57,6 +60,7 @@
 }
 
 .projects-list {
+	// list-style-type: none;	
 	@media (min-width: $breakpoint-small) {
 		margin-left: -1.5rem;
 		margin-right: -1.5rem;
@@ -107,13 +111,13 @@
 		&:before {
 			content: "View Project";
 			color: $color-white;
-			@extend .h2;
+			@extend .h3;
 			font-weight: 800;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			margin-top: -.5rem;
-			margin-left: -4.4rem;
+			left: 36%;
+			// margin-top: -.5rem;
+			// margin-left: -4.4rem;
 			opacity: 0;
 			-webkit-transition: all .5s ease-in-out;
     		transition: all .5s ease-in-out;
@@ -139,6 +143,8 @@
 	}
 
 	img {
+		// margin-right: auto;
+		// margin-left: auto;
 		width: 100%;
 	}
 
@@ -153,7 +159,8 @@
 	top: 0;
 
 	@media (min-width: $breakpoint-medium) {
-		margin-top: -21rem;
+		// margin-top: -21rem;
+		margin-top: -4rem;
 
 		.article-wrapper {
 			position: absolute;
@@ -165,7 +172,11 @@
 	}
 
 	.container {
-		max-width: 100%;
+		// max-width: 100%;
+		@media (min-width: $breakpoint-medium){
+			max-width: 70%;
+		}
+
 	}
 
 	article {
@@ -226,12 +237,18 @@
 	}
 
 	img {
-		width: 100%;
+		// width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		@media (min-width: $breakpoint-medium){
+			max-width: 80%;
+			margin-bottom: 16px;
+		}
 	}
 }
 
 .project-navigation {
-	background: $color-black;
+	background: $color-white;
 	padding: 5rem 0;
 
 	a {
@@ -345,10 +362,10 @@
 }
 
 .footer {
-	background: $color-alabaster;
+	background: $color-green;
 	bottom: 0;
 	left: 0;
-	padding: 5rem 0;
+	padding: 1rem 0;
 	position: fixed;
 	right: 0;
 	z-index: -1;
@@ -358,7 +375,7 @@
 .follow {
 	@media (min-width: $breakpoint-medium) {
 		float: left;
-		margin-bottom: 0;
+		margin-bottom: 3rem;
 		width: 33.33333%;
 	}
 }
@@ -367,3 +384,21 @@
 .follow {
 	margin-bottom: 3rem;
 }
+
+
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+
+  }
+  
+  .embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
