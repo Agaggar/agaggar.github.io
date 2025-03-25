@@ -16,14 +16,18 @@
 			<div class="container">
 				<img src="/assets/ucsd_grad_geisel_cropped.jpg" width="15%" height="auto" alt="ucsd_grad_geisel_cropped.jpg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
 				style="position: absolute; right: 20%;">
-				<h2 style="font-size: 1.5rem;">About me.</h2>
+				<h2 style="font-size: 2.rem;">About me.</h2>
 				<!-- <p class="semibold"><br><br><br>About me!</p> -->
 				<p>{{ site.description }}</p>
 			</div>
 		</section>
-		<section class="research">
+		<ul>
+			{% for category in site.categories %}
+			  <li>{{ category[0] }} ({{ category[1].size }} posts)</li>
+			{% endfor %}
+		  </ul>
+		<section class="projects">
 			<div class="container">
-				<!-- <h2>Projects I have worked on.</h2> -->
 				<h1>Research Papers<br><br></h1>
 				<ul class="projects-list">
 					{% for item in site.categories.research reversed %}
