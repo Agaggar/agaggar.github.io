@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: research
 permalink: /:title/
 category: research
 
@@ -8,19 +8,15 @@ meta:
 
 project:
   title: "Data Augmentation in the Low Data Limit"
-  type: "Jekyll"
+  type: "2025 International Conference on Robotics and Automation"
+  authors: M. Sun, A. Gaggar, P. Trautman, T. Murphey
   url: "https://murpheylab.github.io/low-data-nerf/"
-  logo: "assets/images/projects/low_data_nerf/low_data_nerf.png"
+  logo: "assets/images/research/low_data_nerf/low_data_nerf.gif"
   tech: "NeRFs, PyTorch, MLPs, Vision, Uncertainty Quantification"
-
-# agency:
-#   title: "Red Pineapple Co"
-#   url: "https://github.com/arnolds/pineapple"
-#   year: "2017"
 
 images:
   - image:
-    url: "/assets/images/projects/redpineapple/devices.jpg"
+    url: "/assets/images/research/low_data_nerf/low_data_nerf.png"
     alt: "Red Pineapple website on tablet, mobile and desktop"
   - image:
     url: "/assets/images/projects/redpineapple/desktop.jpg"
