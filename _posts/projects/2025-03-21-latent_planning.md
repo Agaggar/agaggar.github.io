@@ -10,6 +10,7 @@ project:
   title: "Control and Planning in the Latent Space"
   type: "ML | Variational Autoencoders"
   logo: "/assets/images/projects/latentplanning/shooting_method.gif"
+  date: Ongoing [Mar. 2025]
 ---
 <br>
 <span class="h2">Skills:</span>

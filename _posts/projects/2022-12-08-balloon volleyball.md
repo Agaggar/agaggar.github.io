@@ -11,6 +11,7 @@ project:
   type: "ROS2 | MoveIt | Computer Vision"
   url: "https://github.com/Dilan-Wijesinghe/AirTrafficControl"
   logo: "/assets/images/projects/balloon_volleyball/balloon_move.gif"
+  date: Dec. 8th, 2022
 
 ---
 <br>
