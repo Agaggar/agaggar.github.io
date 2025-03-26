@@ -8,22 +8,11 @@ meta:
 
 project:
   title: "Data Augmentation in the Low Data Limit"
-  type: "2025 International Conference on Robotics and Automation"
+  type: "2025 Intl. Conference on Robotics and Automation"
   authors: M. Sun, A. Gaggar, P. Trautman, T. Murphey
   url: "https://murpheylab.github.io/low-data-nerf/"
   logo: "assets/images/research/low_data_nerf/low_data_nerf.gif"
   tech: "NeRFs, PyTorch, MLPs, Vision, Uncertainty Quantification"
-
-images:
-  - image:
-    url: "/assets/images/research/low_data_nerf/low_data_nerf.png"
-    alt: "Red Pineapple website on tablet, mobile and desktop"
-  - image:
-    url: "/assets/images/projects/redpineapple/desktop.jpg"
-    alt: "Red Pineapple website on a desktop device"
-  - image:
-    url: "/assets/images/projects/redpineapple/mobile.jpg"
-    alt: "Red Pineapple website on a mobile device"
 
 ---
 <p>Current methods based on Neural Radiance Fields fail in the low data limit, particularly when training on incomplete scene data.
