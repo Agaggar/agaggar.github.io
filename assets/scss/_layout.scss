@@ -38,7 +38,7 @@
 	z-index: 1;
 
 	@media (min-width: $breakpoint-medium) {
-		padding: 10rem 0 0;
+		padding: 10rem 0rem 0;
 		margin-bottom: 23.42rem;
 	}
 }
@@ -53,8 +53,12 @@
 	margin-bottom: 0rem;
 	@media (min-width: $breakpoint-medium) {
 		p {
-			font-size: 2.7rem;
+			font-size: 2.2rem;
 			max-width: 66.66666%;
+			a {
+				text-decoration: underline;
+				color: $color-dark-green;
+			}
 		}
 	}
 }
@@ -390,7 +394,14 @@
 
 .contact,
 .follow {
-	margin-bottom: 3rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.contact {
+	a {
+		text-decoration: underline;
+	}
 }
 
 

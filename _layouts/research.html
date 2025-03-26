@@ -6,13 +6,17 @@
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
 	{% include head.html %}
+	<!-- Mathjax Support -->
+	<script type="text/javascript" async
+	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
 </head>
 <body>
 	{% include header.html %}
 	<main class="content">
 		<section class="project">
 			<div class="container">
-				<article>
+				<!-- <article> -->
 					<span class="h2">Project Title</span>
 					<h1>
 						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
@@ -23,8 +27,8 @@
 					<p><a title="{{page.project.type}}">{{ page.project.type }}</a></p>
 					<span class="h2">Description</span>
 					{{ page.content }}
-				</article>
-				<aside>
+				<!-- </article> -->
+				<!-- <aside>
 					<ul>
 						{% for image in page.images %}
 						<li>
@@ -32,7 +36,7 @@
 						</li>
 						{% endfor %}
 					</ul>
-				</aside>
+				</aside> -->
 			</div>
 		</section>
 		<section class="project-navigation">

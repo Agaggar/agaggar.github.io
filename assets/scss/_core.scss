@@ -23,12 +23,13 @@ h1,
 
 h2,
 .h2 {	
-	color: $color-silver-chalice;
+	// color: $color-silver-chalice;
 	display: block;
 	font-family: $font-lekton;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: .2rem;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .05rem;
+	color: $color-dark-green;
     line-height: 1;
     margin: 0 0 1rem;
     text-transform: uppercase;
@@ -46,6 +47,10 @@ h3,
 
 p {
 	margin: 0;
+	a {
+		text-decoration: underline;
+		color: $color-dark-green;
+	}
 }
 
 a {
