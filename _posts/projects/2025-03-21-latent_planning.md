@@ -25,7 +25,7 @@ Cons: Struggles for more than one-step predictions; have to replan
 In the video, I employ iLQR with a horizon of 5 timesteps and replan after executing one control step.</p>
 <br>
 <video class="custom-video" autoplay loop muted playsinline controls>
-    <source src="/assets/images/projects/latentplanning/iLQR.gif" alt="iLQR control for cartpole balancing" type="video/mp4">
+    <source src="/assets/images/projects/latentplanning/iLQR.mp4" alt="iLQR control for cartpole balancing" type="video/mp4">
 </video>
 
 <p>Method 2: A variant on <a href="https://danijar.com/project/planet/">PlaNet</a>: The images are passed through a VAE, the latent variables are passed through a deep RNN to predict the next latent state mean and variance, which is then passed through a decoder. Although optimal control can't be predicted, you can use MPC methods to guide control (like a random shooting method).

@@ -9,7 +9,7 @@ meta:
 project:
   title: "Data Augmentation in the Low Data Limit"
   type: "2025 Intl. Conference on Robotics and Automation"
-  authors: M. Sun, A. Gaggar, P. Trautman, T. Murphey
+  authors: <a>A. Gaggar</a>, T. Murphey
   url: "https://murpheylab.github.io/low-data-nerf/"
   logo: "assets/images/research/low_data_nerf/low_data_nerf.gif"
   tech: "NeRFs, PyTorch, MLPs, Vision, Uncertainty Quantification"
