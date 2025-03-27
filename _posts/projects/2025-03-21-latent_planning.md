@@ -24,7 +24,9 @@ Pros: Enforcing local linearity in the system
 Cons: Struggles for more than one-step predictions; have to replan
 In the video, I employ iLQR with a horizon of 5 timesteps and replan after executing one control step.</p>
 <br>
-<img src="/assets/images/projects/latentplanning/iLQR.gif" alt="iLQR control for cartpole balancing">
+<video class="custom-video" autoplay loop muted playsinline controls>
+    <source src="/assets/images/projects/latentplanning/iLQR.gif" alt="iLQR control for cartpole balancing" type="video/mp4">
+</video>
 
 <p>Method 2: A variant on <a href="https://danijar.com/project/planet/">PlaNet</a>: The images are passed through a VAE, the latent variables are passed through a deep RNN to predict the next latent state mean and variance, which is then passed through a decoder. Although optimal control can't be predicted, you can use MPC methods to guide control (like a random shooting method).
 Pros: Simpler architecture, better future predictions, better response to control inputs
@@ -32,7 +34,10 @@ Cons: No linearity
 In the video, I employ a random shooting method (simulate 20 trajectories, take the control action that most minimizes the latent difference, then replan).</p>
 
 <br>
-<img src="/assets/images/projects/latentplanning/shooting_method.gif" alt="Random shooting method, MPC control for cartpole balancing">
+<video class="custom-video" autoplay loop muted playsinline controls>
+    <source src="/assets/images/projects/latentplanning/shooting_method.mp4" alt="Random shooting method, MPC control for cartpole balancing" type="video/mp4">
+</video>
+<!-- <img src="/assets/images/projects/latentplanning/shooting_method.gif" alt="Random shooting method, MPC control for cartpole balancing"> -->
 
 <p>Performance comparison: both succeed at roughly the same rate (not rigorously tested) and take similar amounts of training time (didn't check compute cost). My hunch is that the RNN would perform better at more complicated tasks, which is probably why papers like Dreamer use it on hardware.</p>
 
