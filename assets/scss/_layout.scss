@@ -426,4 +426,10 @@
     width: 100%; /* Adjust as needed */
     max-width: 800px;
     border-radius: 10px; /* Optional: rounded edges */
+	display: block;
+    margin: 0 auto; /* Centers the video */
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	// text-align: center;
+	// justify-content: center;
 }
