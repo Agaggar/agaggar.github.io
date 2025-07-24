@@ -7,7 +7,7 @@ meta:
   keywords: "NeRFs, Low Data, Vision"
 
 project:
-  title: "Data Augmentation in the Low Data Limit"
+  title: "Data Augmentation for NeRFs in the Low Data Limit"
   type: "2025 Intl. Conference on Robotics and Automation"
   authors: <a>A. Gaggar</a>, T. Murphey
   url: "https://murpheylab.github.io/low-data-nerf/"
