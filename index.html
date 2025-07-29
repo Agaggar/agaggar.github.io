@@ -18,11 +18,13 @@
 				<img src="/assets/icra_photo.png" width="25%" height="auto" alt="icra_photo.png" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
 				style="float: right; margin-right: 10px;">
 				<h2 style="font-size: 16px;">About me.</h2>
-				 <p> 
+				 <p style="font-size: 20px"> 
 					I am a Ph.D. candidate at the Northwestern University <a href="https://robotics.northwestern.edu/">Center for Robotics and Biosystems</a>.
 					I am a researcher in the <a href=https://murpheylab.github.io/>Interactive and Emergent Autonomy Lab</a>, advised by <a href=https://murpheylab.github.io/people/toddmurphey>Dr. Todd Murphey</a>.
 					<br><br>
-					I research algorithms for increasing reliability of generative models by <em>quantifying uncertainty</em> and deploying <em>self-sufficient</em> agents to collect additional data from the environment. Applications of my research include active sensing & exploration, robust data collection, and perceptual learning.
+					My research improves the generalization capabilities of generative models by combining <mark style="background-color: #a9c19198">Bayesian inference</mark> and <mark style="background-color: #a9c19198">deep learning</mark> to explicitly model uncertainty and guide autonomous agents in collecting maximally informative data. 
+					I integrate <mark style="background-color: #a9c19198">perception, machine learning, and actions</mark> in a closed loop system for online, active learning.
+					Applications of my research include active sensing & exploration, robust data collection, and perceptual learning.
 				</p>
 				<!-- <p style="font-size:10px;">
 					Robotics x Machine Learning | Computer Vision
@@ -52,6 +54,25 @@
 				<h1>Projects<br><br></h1>
 				<ul class="projects-list">
 					{% for item in site.categories.projects %}
+						<li>
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<h1>Class Work<br><br></h1>
+				<ul class="projects-list">
+					{% for item in site.categories.class_projects %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
