@@ -15,7 +15,7 @@ project:
   tech: "NeRFs, PyTorch, MLPs, Vision, Uncertainty Quantification"
 
 ---
-<p class="h2">TLDR: </p>
+<p class="h3" style="color: #7a995d">TLDR: </p>
 Although NeRFs have taken the CV field by storm, they struggle in the low data limit, and often fail horrendously on incomplete scene data. We present an objective function that combines both in and out of distribution uncertainty. Further, we show how rejection sampling a set of views is far better than current, Next-Best-View techniques. On average, our method achieves <span style="color: #a9c191">39.9% better performance with 87.5% less variability</span> compared to SOTA methods.
 
 <p class="h2">Background:</p>
