@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ page.project.title }}</title>
+	<title>{{ site.author }} / {{ page.title }}</title>
 	<meta name="author" content="{{ site.author }}">
-	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
+	{% assign desc = page.description | default: page.excerpt | default: page.content %}
+	<meta name="description" content="{{ desc | strip_html | strip_newlines | truncate: 160 }}">
+	{% if page.meta.keywords %}
 	<meta name="keywords" content="{{ page.meta.keywords }}">
+	{% endif %}
 	{% include head.html %}
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+	{% if page.mathjax %}
+	<script>
+		window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
+	</script>
+	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	{% endif %}
 </head>
 <body>
 	{% include header.html %}
 	<main class="content">
-		<section class="project">
-			<div class="container">
-				<!-- <article> -->
-					<span class="h2">Project Title</span>
-					<h1>
-						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
-					</h1>
-					<span class="h2">Date Completed:</span>
-					<span style="font-family: $font-poppins;">{{ page.project.date }}</span>
-					{{ page.content }}
+		<article class="blog-essay">
+			<div class="container blog-essay__inner">
+				<p class="blog-essay__all_posts"><a href="{{ '/blog/' | prepend: site.baseurl }}">All Posts</a></p>
+				<h1 class="blog-essay__title">{{ page.title }}</h1>
+				<p class="blog-essay__meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+				<div class="blog-essay__body">
+					{{ content }}
+				</div>
 			</div>
-		</section>
+		</article>
 	</main>
 	{% include footer.html %}
-	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/vendor/sticky-kit.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/project.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

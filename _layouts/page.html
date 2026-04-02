@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.author }} / {{ page.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ page.description | default: site.description | strip_html | strip_newlines | truncate: 160 }}">
+	{% include head.html %}
+</head>
+<body>
+	{% include header.html %}
+	<main class="content">
+		<section class="page-section">
+			<div class="container">
+				<h1 class="page-section__title">{{ page.title }}</h1>
+				<div class="page-section__body">
+					{{ content }}
+				</div>
+			</div>
+		</section>
+	</main>
+	{% include footer.html %}
+</body>
+</html>
