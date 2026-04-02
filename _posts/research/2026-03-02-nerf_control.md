@@ -7,8 +7,8 @@ meta:
   keywords: "NeRFs, Hardware, Vision"
 
 project:
-  title: "NeRF-Control: Perception-Aware Trajectory Optimization"
-  type: "2026 Intl. Conference on Robotics and Automation [Submitted]"
+  title: "PATO: Perception-Aware Trajectory Optimization for Active NeRFs"
+  type: "2026 Intl. Conference on Intelligent Robots & Systems (IROS) [Submitted]"
   authors: <a>A. Gaggar</a>, T. Murphey
   # url: "https://murpheylab.github.io/nerf-control/nerf_control"
   logo: "assets/images/research/nerf_control/nerf_control_hardware.GIF"
@@ -34,7 +34,7 @@ Our contributions are:<br>
 3) End-to-end, online evaluation in simulation and on a 7-DoF robot arm. In simulation, our method achieves 33% higher reconstruction accuracy with 39% reduced trajectory length compared against uniform and TSP-based baselines; in hardware, we achieve better reconstruction, while taking 54% less time on average for the robot to execute our trajectory.<br><br>
 </p>
 
-<p>Website with code, videos, and interactive figures will be published after ICRA review.</p>
+<p>Website with code, videos, and interactive figures will be published after review.</p>
 
 <!-- <video class="custom-video" autoplay loop muted playsinline controls>
   <source src="/assets/images/research/low_data_nerf/hardware_nerf.mp4" type="video/mp4" alt="hardware nerf">
