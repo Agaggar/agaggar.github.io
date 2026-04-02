@@ -1,0 +1,23 @@
+---
+layout: page
+title: Blogs, Posts, & Tutorials
+description: "Notes and essays on machine learning, robotics, and control."
+permalink: /blog/
+---
+{% assign posts = site.categories.blog | sort: 'date' | reverse %}
+
+<ul class="blog-index-list">
+	{% for post in posts %}
+	<li>
+		<a href="{{ post.url | prepend: site.baseurl }}">
+			<p class="blog-index-list__date">{{ post.date | date: "%B %-d, %Y" }}</p>
+			<h2>{{ post.title }}</h2>
+			{% if post.description %}
+			<p class="blog-index-list__description">{{ post.description }}</p>
+			{% elsif post.excerpt %}
+			<p class="blog-index-list__description">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+			{% endif %}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
