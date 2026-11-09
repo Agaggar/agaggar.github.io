@@ -1,17 +1,18 @@
 ---
-layout: research
+layout: project
 permalink: /:title/
-category: research
+category: projects
 
 meta:
   keywords: "NeRFs, Hardware, Vision"
 
 project:
   title: "PATO: Perception-Aware Trajectory Optimization for Active NeRFs"
-  type: "2026 Intl. Conference on Intelligent Robots & Systems (IROS) [Submitted]"
+  type: "NeRFs | Trajectory Optimization | Hardware"
   authors: <a>A. Gaggar</a>, T. Murphey
+  date: Mar. 2026
   # url: "https://murpheylab.github.io/nerf-control/nerf_control"
-  logo: "assets/images/research/nerf_control/nerf_control_hardware.GIF"
+  logo: "/assets/images/research/nerf_control/nerf_control_hardware.GIF"
   tech: "NeRFs, PyTorch, MLPs, Vision, Uncertainty Quantification"
 
 ---
@@ -19,7 +20,7 @@ project:
 <p>
 Perception models neglect the motion costs of physical sensing agents to acquire training data, such as execution time, total distance traveled, or energy expenditure. In this work, we present a perception-aware objective function for trajectory optimization that jointly balances reducing model uncertainty, ensuring scene coverage, and minimizing total distance traveled. This objective is used to develop an iterative trajectory optimization framework for closed-loop, active data acquisition. To our knowledge, this is the first work to formulate NeRF-aware trajectory optimization for active data collection under perception objectives and motion constraints.</p>
 <br>
-<p>Furthermore, we demonstrate autonomously trained NeRFs on a 7-DoF robotic arm by executing optimized view trajectories for two tabletop objects. <span style="color: #a9c191">Training NeRFs on hardware brings its own challenges</span>, with reconstructed models differing in position, orientation, and scale from ground truth validation images. Lighting inconsistencies, motion blur, and defocus must also be addressed. On average, our method achieves <span style="color: #a9c191">33% better performance compared to SOTA methods. </p>
+<p>Furthermore, we demonstrate autonomously trained NeRFs on a 7-DoF robotic arm by executing optimized view trajectories for two tabletop objects. <span style="color: #a9c191">Training NeRFs on hardware brings its own challenges</span>, with reconstructed models differing in position, orientation, and scale from ground truth validation images. Lighting inconsistencies, motion blur, and defocus must also be addressed. On average, our method achieves <span style="color: #a9c191">33% better performance compared to SOTA methods.</span></p>
 
 <p class="h2">Background:</p>
 <p>

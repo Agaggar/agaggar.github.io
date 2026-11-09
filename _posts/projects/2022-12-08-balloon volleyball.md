@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /:title/
-category: class_projects
+category: projects
 
 meta:
   keywords: "ROS2, MoveIt, Computer Vision"
