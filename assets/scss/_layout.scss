@@ -73,6 +73,11 @@
 		li {
 			float: left;
 			width: 50%;
+
+			// start each row on a fresh line so taller cards (2-line titles) can't snag the next row
+			&:nth-child(2n+1) {
+				clear: left;
+			}
 		}
 
 		a {
@@ -83,6 +88,13 @@
 	@media (min-width: $breakpoint-medium) {
 		li {
 			width: 33.33333%;
+
+			&:nth-child(2n+1) {
+				clear: none;
+			}
+			&:nth-child(3n+1) {
+				clear: left;
+			}
 		}
 	}
 
