@@ -17,9 +17,14 @@
 					<h1>
 						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
 					</h1>
-					<span class="h2">Date Completed:</span>
+					{% if page.project.authors %}
+					<span class="h2">Authors</span>
+					<p>{{ page.project.authors }}</p>
+					{% endif %}
+					<span class="h2">{% if page.category == "industry" %}Dates:{% else %}Date Completed:{% endif %}</span>
 					<span style="font-family: $font-poppins;">{{ page.project.date }}</span>
 					{{ page.content }}
+					{% if page.ai_drafted %}{% include ai-note.html %}{% endif %}
 				<!-- </article> -->
 				<!-- <aside>
 					<ul>
@@ -32,7 +37,7 @@
 				</aside> -->
 			</div>
 		</section>
-		{% assign project_posts = site.posts | where: "categories", "projects" %}
+		{% assign project_posts = site.categories[page.category] %}
 		{% for post in project_posts %}
 			{% if post.title == page.title %}
 				{% assign curr_index = forloop.index0 %}

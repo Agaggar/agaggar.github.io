@@ -7,9 +7,10 @@
 	<meta name="keywords" content="{{ page.meta.keywords }}">
 	{% include head.html %}
 	<!-- Mathjax Support -->
-	<script type="text/javascript" async
-	src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+	<script>
+		window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
 	</script>
+	<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
 	{% include header.html %}
@@ -27,6 +28,7 @@
 					<p><a title="{{page.project.type}}">{{ page.project.type }}</a></p>
 					<br>
 					{{ page.content }}
+					{% if page.ai_drafted %}{% include ai-note.html %}{% endif %}
 				<!-- </article> -->
 				<!-- <aside>
 					<ul>
