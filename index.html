@@ -15,16 +15,16 @@
 	<main class="content">
 		<section class="intro">
 			<div class="container">
-				<img src="/assets/icra_photo.png" width="25%" height="auto" alt="icra_photo.png" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+				<img src="/assets/ayush_cropped_headshot.jpeg" width="25%" height="auto" alt="ayush_cropped_headshot.jpeg" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
 				style="float: right; margin-right: 10px;">
 				<h2 style="font-size: 16px;">About me.</h2>
 				 <p style="font-size: 20px"> 
 					I am a Ph.D. candidate at the Northwestern University <a href="https://robotics.northwestern.edu/">Center for Robotics and Biosystems</a>.
 					I am a researcher in the <a href=https://murpheylab.github.io/>Interactive and Emergent Autonomy Lab</a>, advised by <a href=https://murpheylab.github.io/people/toddmurphey>Dr. Todd Murphey</a>.
 					<br><br>
-					My research improves the generalization capabilities of generative models by combining <mark style="background-color: #a9c19198">Bayesian inference</mark> and <mark style="background-color: #a9c19198">deep learning</mark> to explicitly model uncertainty and guide autonomous agents in collecting maximally informative data. 
-					I integrate <mark style="background-color: #a9c19198">perception, machine learning, and actions</mark> in a closed loop system for online, active learning.
-					Applications of my research include active sensing & exploration, robust data collection, and perceptual learning.
+					My research asks how robots can collect their own data to learn better <mark style="background-color: #a9c19198">world models</mark>.
+					I integrate <mark style="background-color: #a9c19198">predictive uncertainty</mark> as an information-theoretic signal in the closed-loop system of perception, learning, and action for online, active learning on hardware.
+					Before this, I worked on active perception with NeRFs and Gaussian Splatting and on fast ergodic exploration. Through internships at Honda Research Institute and Dolby, I also worked on <mark style="background-color: #a9c19198">multi-agent coordination</mark>, <mark style="background-color: #a9c19198">audio-visual perception</mark>, and <mark style="background-color: #a9c19198">fine-tuning multimodal foundation models</mark>.
 				</p>
 				<!-- <p style="font-size:10px;">
 					Robotics x Machine Learning | Computer Vision
@@ -51,9 +51,9 @@
 		</section>
 		<section class="projects">
 			<div class="container">
-				<h1>Projects<br><br></h1>
+				<h1>Industry Research<br><br></h1>
 				<ul class="projects-list">
-					{% for item in site.categories.projects %}
+					{% for item in site.categories.industry %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
@@ -67,12 +67,11 @@
 				</ul>
 			</div>
 		</section>
-
 		<section class="projects">
 			<div class="container">
-				<h1>Class Work<br><br></h1>
+				<h1>Projects<br><br></h1>
 				<ul class="projects-list">
-					{% for item in site.categories.class_projects %}
+					{% for item in site.categories.projects %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
