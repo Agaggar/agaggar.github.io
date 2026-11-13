@@ -11,7 +11,7 @@ project:
   title: "Does Your World Model Know Actions Have Consequences?"
   type: "2026 CoRL Workshop: Do Robots Need World Models? [Non-archival]"
   authors: <a>A. Gaggar</a>, J. Berry, T. Murphey
-  url: "https://do-robots-need-world-models.github.io"
+  url: "https://arxiv.org/abs/2611.15048"
   logo: "/assets/images/research/world_models/ap-metric-sketch.png"
   tech: "World Models, TD-MPC2, MuJoCo, Meta-World, PyTorch, Sensitivity Analysis"
 ---
