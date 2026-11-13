@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#f6f6f6"/>
+  <rect x="24" y="24" width="352" height="352" fill="none" stroke="#a9c191" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="200" y="196" text-anchor="middle" font-family="Poppins, Helvetica, Arial, sans-serif" font-size="22" fill="#7a995d">Cover coming soon</text>
+  <text x="200" y="226" text-anchor="middle" font-family="Poppins, Helvetica, Arial, sans-serif" font-size="14" fill="#aaa">video in the works</text>
+</svg>
